@@ -25,6 +25,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- CSS Link -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- JS Link -->
+    <script src="js.js"></script>
     <!-- Font Awesome 5 Icons Link -->
     <script src="https://kit.fontawesome.com/4c8f8a6053.js" crossorigin="anonymous"></script>
     <title>StopWatch</title>
@@ -42,21 +44,20 @@
 <!-- Home -->
 <div class="home">
 <div class="div">
-<h1 class="stop-watch">00.00.00</h1>
+<h1 class="stop-watch" id="sW"><span id="hrs">00</span>:<span id="mins">00</span>:<span id="secs">00</span></h1>
 <div class="btns">
 <!-- Start -->
-<button class="start" id="start">Start</button>
+<button class="start" id="start" onclick="start()">Start</button>
 
 <!-- Stop -->
-<button class="stop" id="stop">Stop</button>
+<button class="stop" id="stop" onclick="stop()">Stop</button>
 
 <!-- Reset -->
-<button class="reset" id="reset">Reset</button>
+<button class="reset" id="reset" onclick="reset()">Reset</button>
 
-<!-- Lap -->
-<button class="lap" id="lap">Lap</button>
 </div>
 </div>
+
 </div>
 
 </body>
