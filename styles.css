@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  overflow-x: hidden !important;
+  background: #000 !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.nav {
+  position: relative;
+  width: 100%;
+  height: 5em;
+  background: #000;
+}
+
+.logo {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  -webkit-transform: translate(-5%, -50%) !important;
+          transform: translate(-5%, -50%) !important;
+  width: 36px;
+  height: auto;
+}
+
+.home {
+  width: 100%;
+  height: 80vh;
+}
+
+.div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+}
+
+.stop-watch {
+  font-weight: 600 !important;
+  font-size: 80px;
+  text-align: center;
+  color: #fff;
+}
+
+.btns {
+  margin-top: 4em !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.start, .reset, .stop, .lap {
+  width: 120px;
+  height: auto;
+  border-radius: 30px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600 !important;
+  font-size: 18px;
+  background: #8587FE;
+  border: 0px solid transparent;
+  text-align: center !important;
+  padding: 0.5em 2em !important;
+  outline: none;
+  cursor: pointer !important;
+  text-decoration: none;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.start:active, .reset:active, .stop:active, .lap:active {
+  -webkit-transform: scale(0.96) !important;
+          transform: scale(0.96) !important;
+}
+
+.reset, .lap {
+  margin-left: 5em !important;
+}
+
+.stop, .lap {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .stop-watch {
+    font-size: 50px;
+  }
+  .btns {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .reset, .lap {
+    margin-left: 0 !important;
+    margin-top: 2em !important;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
