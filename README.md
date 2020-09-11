@@ -1,2 +1,2 @@
-# StopWatch 
+# StopWatch
 A stopwatch website.
